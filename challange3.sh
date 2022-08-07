@@ -12,9 +12,11 @@
 # Author: sujan thapa magar
 # Date of latest revision: 27 July 2022
 # Purpose: Show login history
-# function history {
-# echo "$(last)"
-# }
+function history {
+    echo "History of logged in users"
+    $1
+    echo "Most recent login for all users"
+    $2  
+}
 
-# this calls history
-# history
+history last lastlog 
